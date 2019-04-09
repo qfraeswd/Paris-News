@@ -122,7 +122,7 @@ client.on("message", async message => {
             .setColor("RANDOM")
             .setThumbnail(message.author.avatarURL)
             .setDescription(`╔════════════════════════════════════╗
-			║             :radio: :microphone2: ***__بـــوت اعــلانــات بــاريـــس__***:radio: :microphone2: 
+			║             :radio: :microphone2: ***__بـــوت اعــلانــات ${message.guild.name}__***:radio: :microphone2: 
 			║
 			║▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 			║                                   :shield: **__اوامـــــــر بــــوت__**:shield: 
