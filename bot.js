@@ -140,5 +140,44 @@ client.on("message", async message => {
     }
 });
 
+client.on('message', message => {
+  if (!message.content.startsWith(prefix)) return;
+  var args = message.content.split(' ').slice(1);
+  var argresult = args.join(' ');
+  if (message.author.id == 564414567946387487) return;
+
+
+if (message.content.startsWith(prefix + 'playing')) {
+if (message.author.id !== '564414567946387487') return message.reply('***هــذا الامـــر الــى صـــاحـــب بــوت فــقــط***:x:')
+client.user.setGame(argresult);
+    message.channel.sendMessage(`**__${argresult}__تــم تـغـيــر حـالـه الـى:white_circle:**`)
+} else
+
+if (message.content.startsWith(prefix + 'streem')) {
+if (message.author.id !== '564414567946387487') return message.reply('***هــذا الامـــر الــى صـــاحـــب بــوت فــقــط***:x:')
+client.user.setGame(argresult, "http://twitch.tv/y04zgamer");
+    message.channel.sendMessage(`**__${argresult}__ تـم تـغـيـر حـالـه ألـى**:large_blue_circle:`)
+} else
+
+if (message.content.startsWith(prefix + 'setname')) {
+if (message.author.id !== '564414567946387487') return message.reply('***هــذا الامـــر الــى صـــاحـــب بــوت فــقــط***:x:')
+  client.user.setUsername(argresult).then
+      message.channel.sendMessage(`**__${argresult}__تــم تـغـيـر اسـم الـى :pencil:**`)
+  return message.reply("** لا يــمــكــن تـغــيــر اســم الان نــتـظـار بـعـد سـاعـتـان **:x:");
+} else
+
+if (message.content.startsWith(prefix + 'setavatar')) {
+if (message.author.id !== '564414567946387487') return message.reply('***هــذا الامـــر الــى صـــاحـــب بــوت فــقــط***:x:')
+client.user.setAvatar(argresult);
+    message.channel.sendMessage(`**__${argresult}__** تــم تــغــيــر صـــور الـى :camera_with_flash:**`);
+} else
+
+
+if (message.content.startsWith(prefix + 'watching')) {
+if (message.author.id !== '564414567946387487') return message.reply('***هــذا الامـــر الــى صـــاحـــب بــوت فــقــط***:x:')
+    client.user.setActivity(argresult, {type : 'watching'});
+ message.channel.sendMessage(`**__${argresult}__تــم تــغــيــر حــالــه الــى :red_circle:**`)${argresult}
+}
+});
 
 client.login(process.env.BOT_TOKEN);
