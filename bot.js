@@ -165,4 +165,29 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 }
 });
 
+client.on("message", async message => {
+    if(message.content.startsWith(prefix + "help1")) {
+        let help1 = new Discord.RichEmbed()
+            .setColor("RANDOM")
+            .setThumbnail(message.author.avatarURL)
+            .setDescription(`**__اوامـــر تــغـيـر احـلات بـوت + صـور + اسـم__**
+			▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+			***
+			1-${prefix}setgame = الـى تـغـيـر حـالـه بـلانـيـق [ :large_blue_circle: ]
+			
+			2-${prefix}setT = الـى تـغـيـر حـالـه تـويـتـش [ :red_circle: ]
+			
+			3-${prefix}setavatar = الـى تـغـيـر صـور [ :camera_with_flash: ]
+			
+			4-${prefix}setname = الـى تـغـيـر اسـم [ :pencil: ]
+			***
+			▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+			**__مـسـوالـيـن تـغـيـر__**
+			▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+			1-! ➹⎛ トゥルキパシャ ⎞♔ ❥ 
+			2-Mr!Zeꙃo`);
+            message.channel.sendEmbed(help1);
+    }
+});
+
 client.login(process.env.BOT_TOKEN);
