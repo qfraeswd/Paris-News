@@ -173,7 +173,7 @@ client.on("message", async message => {
             .setDescription(`**__اوامـــر تــغـيـر احـلات بـوت + صـور + اسـم__**
 			▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 			***
-			1-${prefix}setgame = الـى تـغـيـر حـالـه الـى بـلانـيـق [ :large_blue_circle: ]
+			1-${prefix}setgame = الى تـغـيـر حـالـه الـى بـلانـيـق [ :large_blue_circle: ]
 			
 			2-${prefix}setT = الـى تـغـيـر حـالـه الــى تـويـتـش [ :red_circle: ]
 			
