@@ -148,7 +148,7 @@ client.on('message', message => {
    
 if (message.content.startsWith(adminprefix + 'setgame')) {
   client.user.setGame(argresult);
-    message.channel.sendMessage(`**__${argresult}__تـم تـغـيـر بـلانـيـق الـى:large_blue_circle:**`)${argresult}
+    message.channel.sendMessage(`**__${argresult}__تـم تـغـيـر بـلانـيـق الـى:large_blue_circle:**`)
 } else
   if (message.content.startsWith(adminprefix + 'setname')) {
 client.user.setUsername(argresult).then
