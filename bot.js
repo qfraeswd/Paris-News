@@ -166,8 +166,8 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 });
 
 client.on("message", async message => {
-    if(message.content.startsWith(prefix + "help1")) {
-        let help1 = new Discord.RichEmbed()
+    if(message.content.startsWith(prefix + "Ex")) {
+        let Ex = new Discord.RichEmbed()
             .setColor("RANDOM")
             .setThumbnail(message.author.avatarURL)
             .setDescription(`**__اوامـــر تــغـيـر احـلات بـوت + صـور + اسـم__**
@@ -186,7 +186,7 @@ client.on("message", async message => {
 			▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 			1-! ➹⎛ トゥルキパシャ ⎞♔ ❥ 
 			2-Mr!Zeꙃo`);
-            message.channel.sendEmbed(help1);
+            message.channel.sendEmbed(Ex);
     }
 });
 
