@@ -185,7 +185,7 @@ client.on("message", async message => {
 			**__مـسـوالـيـن تـغـيـر__**
 			▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 			1-! ➹⎛ トゥルキパシャ ⎞♔ ❥ 
-			2-Mr!Zeꙃo`);
+			2-.7md`);
             message.channel.sendEmbed(Ex);
     }
 });
