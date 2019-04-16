@@ -141,7 +141,7 @@ client.on("message", async message => {
 });
 
 const adminprefix = "%";
-const devs = ['564414567946387487','517956585839132682']
+const devs = ['564414567946387487','532592989789487104']
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -185,9 +185,10 @@ client.on("message", async message => {
 			**__مـسـوالـيـن تـغـيـر__**
 			▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 			1-! ➹⎛ トゥルキパシャ ⎞♔ ❥ 
-			2-.7md`);
+			2-《Ma》Mr!Zeꙃo`);
             message.channel.sendEmbed(Ex);
     }
 });
 
 client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN2);
