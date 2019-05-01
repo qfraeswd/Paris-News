@@ -356,42 +356,4 @@ color: 'RANDOM'})
 }
 });
 
-client.on("ready", async  => {
-setInterval(function(){
-client.channels.find('id', '571780476981870615').setName("م");
-client.channels.find('id', '571780476981870615').setName("مر");
-client.channels.find('id', '571780476981870615').setName("مرح");
-client.channels.find('id', '571780476981870615').setName("مرحب");
-client.channels.find('id', '571780476981870615').setName("مرحب ب");
-client.channels.find('id', '571780476981870615').setName("مرحب بك");
-client.channels.find('id', '571780476981870615').setName("مرحب بكم);
-client.channels.find('id', '571780476981870615').setName("فى");
-client.channels.find('id', '571780476981870615').setName("𝓒");
-client.channels.find('id', '571780476981870615').setName("𝓒𝓞");
-client.channels.find('id', '571780476981870615').setName("𝓒𝓞𝓜");
-client.channels.find('id', '571780476981870615').setName("𝓒𝓞𝓜𝓜");
-client.channels.find('id', '571780476981870615').setName("𝓒𝓞𝓜𝓜𝓤");
-client.channels.find('id', '571780476981870615').setName("𝓒𝓞𝓜𝓜𝓤𝓝");
-client.channels.find('id', '571780476981870615').setName("𝓒𝓞𝓜𝓜𝓤𝓝𝓘");
-client.channels.find('id', '571780476981870615').setName("𝓒𝓞𝓜𝓜𝓤𝓝𝓘𝓣");
-client.channels.find('id', '571780476981870615').setName("𝓒𝓞𝓜𝓜𝓤𝓝𝓘𝓣𝓨");
-client.channels.find('id', '571780476981870615').setName("𝓜");
-client.channels.find('id', '571780476981870615').setName("𝓜𝓔");
-  }, 15000);// وقت 
-});
-
-client.on("ready", async  => {
-setInterval(function(){
-client.channels.find('id', '571784368230760480').setName("۩ر");
-client.channels.find('id', '571784368230760480').setName("۩رم");
-client.channels.find('id', '571784368230760480').setName("۩رمض");
-client.channels.find('id', '571784368230760480').setName("۩رمضا");
-client.channels.find('id', '571784368230760480').setName("۩رمضان");
-client.channels.find('id', '571784368230760480').setName("۩رمضان ك");
-client.channels.find('id', '571784368230760480').setName("۩رمضان كر");
-client.channels.find('id', '571784368230760480').setName("۩رمضان كري");
-client.channels.find('id', '571784368230760480').setName("۩رمضان كريم۩");
-  }, 10000);// وقت 
-});
-
 client.login(process.env.BOT_TOKEN);
