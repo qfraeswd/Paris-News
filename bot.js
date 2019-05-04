@@ -213,7 +213,7 @@ client.on("message", message => {
                           var age = m2.content;
                           m2.delete()
                           message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                            m.edit( message.member + ', **هل تتفاعل في الرتبه البائعين🎙**' )
+                            m.edit( message.member + ', **هل تتفاعل في الرتبه **' )
                             setTimeout(() => {
                               m.delete()
                             }, 10000);
@@ -222,7 +222,7 @@ client.on("message", message => {
                                 var ask = m3.content;
                                 m3.delete();
                                 message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                                  m.edit( message.member + ', **هل ستحترم القوانين بائعين ؟ 📑**' )
+                                  m.edit( message.member + ', **هل ستحترم القوانين  ؟ 📑**' )
                                   setTimeout(() => {
                                     m.delete()
                                   }, 10000);
@@ -231,7 +231,7 @@ client.on("message", message => {
                                       var ask2 = m4.content;
                                       m4.delete();
                                       message.channel.send( message.member + ', **:timer:**').then( (m) =>{
-                                        m.edit( message.member + ', **مــأ هـــو شــى الـذى تـبـيـبع 🤔**' )
+                                        m.edit( message.member + ', **اكــتـب قــتـراج 🤔**' )
                                         m.channel.awaitMessages( m1 => m1.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m5) => {
                                             m5 = m5.first();
                                             var ask3 = m5.content;
@@ -245,7 +245,7 @@ client.on("message", message => {
                         .addField('**`العمر`**', `${age}` , true)
                         .addField('**`هل سيتفاعل  بارتب ؟`**',`${ask}`)
                         .addField('**`هل سيحترم القوانين ؟`**',`${ask2}`)
-                        .addField('**`مـا هو شـى الـذى تـبـيـعـه`**',`${ask3}`)
+                        .addField('**`قتراح`**',`${ask3}`)
                         .setFooter(message.author.username,'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')
                         channel.send(embed)
                         }, 2500);
