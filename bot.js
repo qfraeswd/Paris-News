@@ -356,4 +356,73 @@ color: 'RANDOM'})
 }
 });
 
+client.on("message",async message => {
+if(message.content === 'شروط'){
+let staff = message.guild.member(message.author).roles.find('name' ,".");
+      if(!staff) return message.reply(`**لسه معاك رتب @. :x:**`)
+var shopc = message.guild.channels.find("name","التقديمات")
+  if(!shopc) return message.reply("**لا يــوجـد روم بـاسـم __التقديمات__**:x:")
+    let شروط = '';
+      let fillter = m => m.author.id === message.author.id
+      
+     
+
+      await message.channel.send("*** اكـــتــب __everyone__***:pencil2:").then(e => {
+           message.channel.awaitMessages(fillter, { time: 60000, max: 1                                    
+})
+     .then(co => {
+       شروط = co.first().content;
+        co.first().delete();
+     
+let desc = '';
+        
+e.edit("*** اكــتــب __here__ ***:pencil2:").then(e => {
+  message.channel.awaitMessages(fillter, { time: 60000, max: 1 })
+
+     .then(co => {
+       desc = co.first().content;
+        co.first().delete();
+e.edit("Done").then(e => {
+  shopc.send(`__${message.guild.name}__
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+*** شـــروط تـقــديــم عـلـى رتـب *** :pushpin:
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+1- مــســاعــده عـضــاء ســيــرفــر :raised_hands: 
+2- تـنـظيـم سـيـرفـر من (الى كتب اوامر فى شات خطا)و :shield: 
+3- عـدام تـكـبـر و سب وشتم وعطاء ميوت والخ الخ :no_entry_sign: 
+4- عدام تخريب ستعلام اوامر بوت اكثر :robot: 
+5- مساعده الادارة فى نشرة سيرفر (فى ترقيه و كريدت )و :crown: 
+6- مساعده اذا كان محتاجه كريدت وسيتم ستراجع الك امر تانى :credit_card: 
+7- مهم : لا تخلى حد الاعضاء سب عضو اخرى = ميوت 5 ساعات :zipper_mouth: 
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+***__شروط تـرقـيـة__***
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+1- تفاعل فى شاتات وترحيب :writing_hand: 
+2- مساعده فى نشره سيرفر وتكبر :radio: 
+3- عدام زعاج الاعضاء :speaking_head: 
+4- عدام تسوى مشنين كل شوى :pushpin: 
+5- مساعده باكريدت :credit_card:
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ 
+***__هــل مــوافــق عـلــى شــروط__***
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+1- مــوافــق عـلـى شـروط : :white_check_mark: 
+2- غـيـر مـوافـق : :x: 
+
+||${message.author}||
+||@${شروط} <--> @${desc}||`)
+  })
+})
+  })
+})
+  })
+           
+      
+  
+     
+  
+      
+           
+}
+});
+
 client.login(process.env.BOT_TOKEN);
