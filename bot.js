@@ -1,6 +1,6 @@
 ﻿const Discord = require("discord.js");
 const client = new Discord.Client();
-const prefix = "%";
+const prefix = "!";
 
 client.on("message", async message => {
     var command = message.content.split(" ")[0];
@@ -88,7 +88,7 @@ client.on("message", async message => {
 });
 
 client.on("message", message => {
-    var prefix = "%";
+    var prefix = "!";
         if (message.author.id === client.user.id) return;
         if (message.guild) {
        let embed = new Discord.RichEmbed()
@@ -140,8 +140,8 @@ client.on("message", async message => {
     }
 });
 
-const adminprefix = "%";
-const devs = ['564414567946387487','532592989789487104']
+const adminprefix = "!";
+const devs = ['564414567946387487','517956585839132682','538083629461536789']
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -185,7 +185,8 @@ client.on("message", async message => {
 			**__مـسـوالـيـن تـغـيـر__**
 			▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 			1-! ➹⎛ トゥルキパシャ ⎞♔ ❥ 
-			2-《Ma》Mr!Zeꙃo`);
+			2-.7md
+    			3-.Dixon `);
             message.channel.sendEmbed(Ex);
     }
 });
