@@ -141,7 +141,7 @@ client.on("message", async message => {
 });
 
 const adminprefix = "!";
-const devs = ['564414567946387487','517956585839132682','538083629461536789']
+const devs = ['541532350719459348','569233904389718028']
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -166,8 +166,8 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 });
 
 client.on("message", async message => {
-    if(message.content.startsWith(prefix + "Ex")) {
-        let Ex = new Discord.RichEmbed()
+    if(message.content.startsWith(prefix + "Me")) {
+        let Me = new Discord.RichEmbed()
             .setColor("RANDOM")
             .setThumbnail(message.author.avatarURL)
             .setDescription(`**__اوامـــر تــغـيـر احـلات بـوت + صـور + اسـم__**
@@ -184,10 +184,9 @@ client.on("message", async message => {
 			▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 			**__مـسـوالـيـن تـغـيـر__**
 			▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-			1-! ➹⎛ トゥルキパシャ ⎞♔ ❥ 
-			2-.7md
-    			3-.Dixon `);
-            message.channel.sendEmbed(Ex);
+			1- <@569233904389718028> 
+			2- <@541532350719459348> `);
+            message.channel.sendEmbed(Me);
     }
 });
 
